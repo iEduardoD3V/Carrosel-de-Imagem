@@ -4,49 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Carrosel de Imagem</title>
 </head>
 
 <body>
-  <div class="slides">
-    <div class="slide-button">
-      <input type="radio" name="btRadio" id="radioBt">
-      <input type="radio" name="btRadio" id="radioBt">
-      <input type="radio" name="btRadio" id="radioBt">
-      <input type="radio" name="btRadio" id="radioBt">
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
 
-      <div class="slide-imagem1">
-        <img src="img/imagem1.png" alt="">
+      <div class="slide first">
+        <img src="img/imagem1.png" alt="Imagem1">
       </div>
-      <div class="slide-imagem2">
-        <img src="img/imagem2.png" alt="">
+      <div class="slide">
+        <img src="img/imagem2.png" alt="Imagem2">
       </div>
-      <div class="slide-imagem3">
-        <img src="img/imagem3.png" alt="">
+      <div class="slide">
+        <img src="img/imagem3.jpeg" alt="Imagem3">
       </div>
-      <div class="slide-imagem4">
-        <img src="img/imagem4.png" alt="">
-      </div>
-
-      <div class="buttonAuto">
-        <div class="buttonAuto1"></div>
-        <div class="buttonAuto2"></div>
-        <div class="buttonAuto3"></div>
-        <div class="buttonAuto4"></div>
+      <div class="slide">
+        <img src="img/imagem4.png" alt="Imagem4">
       </div>
 
-      <div class="buttonManual">
-        <label for="buttonManual1" class="buttonManual"></label>
-        <label for="buttonManual2" class="buttonManual"></label>
-        <label for="buttonManual3" class="buttonManual"></label>
-        <label for="buttonManual4" class="buttonManual"></label>
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
       </div>
+
     </div>
 
-
-
-
-
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
 
   </div>
 </body>
