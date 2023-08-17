@@ -1,7 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 body {
   width: 100%;
@@ -9,87 +8,91 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #222;
 }
-.slides {
+.slider {
   margin: 0 auto;
   width: 1200px;
   height: 600px;
   overflow: hidden;
+  border: 0.3rem solid white;
+  border-radius: 2rem;
+  box-shadow: rgb(236, 236, 236) 0rem 0rem 5rem 1rem;
 }
-.slide-button {
+.slides {
   width: 400%;
   height: 600px;
   display: flex;
 }
-.slide-button input {
+.slides input {
   display: none;
 }
-.slide-imagem {
+.slide {
   width: 25%;
   position: relative;
   transition: 2s;
 }
-.slide-imagem img {
+.slide img {
   width: 1200px;
 }
-.btManual {
+.manual-navigation {
   position: absolute;
   width: 1200px;
   margin-top: -40px;
   display: flex;
   justify-content: center;
 }
-.buttonManual {
+.manual-btn {
   border: 2px solid #fff;
   padding: 5px;
   border-radius: 2px;
   cursor: pointer;
   transition: 1s;
 }
-.buttonManual:not(:last-child) {
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
-.buttonManual :hover {
+.manual-btn :hover {
   background-color: #fff;
 }
-.radioBt1:checked ~ .first {
+#radio1:checked ~ .first {
   margin-left: 0;
 }
-.radioBt2:checked ~ .first {
+#radio2:checked ~ .first {
   margin-left: -25%;
 }
-.radioBt3:checked ~ .first {
+#radio3:checked ~ .first {
   margin-left: -50%;
 }
-.radioBt4:checked ~ .first {
+#radio4:checked ~ .first {
   margin-left: -75%;
 }
-.buttonAuto div {
-  border: 2px solid #c70c0c;
-  padding: 0.5rem;
+.navigation-auto div {
+  border: 2px solid #ccc;
+  padding: 5px;
   border-radius: 2px;
   cursor: pointer;
   transition: 1s;
 }
-.buttonAuto {
+.navigation-auto {
   position: absolute;
   width: 1200px;
   margin-top: 560px;
   display: flex;
   justify-content: center;
 }
-.buttonAuto:not(:last-child) {
+.navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
-#radio1:checked ~ .buttonAuto .buttonAuto1 {
-  background-color: #ffffff;
-}
-#radio2:checked ~ .buttonAuto .buttonAuto2 {
+#radio1:checked ~ .navigation-auto .auto-btn1 {
   background-color: #fff;
 }
-#radio3:checked ~ .buttonAuto .buttonAuto3 {
+#radio2:checked ~ .navigation-auto .auto-btn2 {
   background-color: #fff;
 }
-#radio4:checked ~ .buttonAuto .buttonAuto4 {
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
   background-color: #fff;
 }
