@@ -38,17 +38,18 @@ body {
 .manual-navigation {
   position: absolute;
   width: 1200px;
-  margin-top: -40px;
+  margin-top: -570px;
   display: flex;
   justify-content: center;
 }
-.manual-btn {
-  border: 2px solid #fff;
+ .manual-btn {
+  border: 0.120rem solid #ffffff;
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 1rem;
   cursor: pointer;
   transition: 1s;
-}
+  width: 1rem;
+} 
 .manual-btn:not(:last-child) {
   margin-right: 40px;
 }
@@ -68,16 +69,19 @@ body {
   margin-left: -75%;
 }
 .navigation-auto div {
-  border: 2px solid #ccc;
+  border: 0.120rem solid #ccc;
   padding: 5px;
   border-radius: 2px;
   cursor: pointer;
   transition: 1s;
+  width: 1rem;
+  border-radius: 1rem;
+
 }
 .navigation-auto {
   position: absolute;
   width: 1200px;
-  margin-top: 560px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -85,7 +89,7 @@ body {
   margin-right: 40px;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
   background-color: #fff;
